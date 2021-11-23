@@ -221,22 +221,22 @@
 
                 if(s_mise < 16 && mise < 31){
                     total_mise = "좋음";
-                    total_bg = "img/좋음.PNG";
+                    total_bg = "img/good.PNG";
                 }else if(s_mise < 36 && mise < 81){
                     total_mise = "보통";
-                    total_bg = "img/보통.PNG";
+                    total_bg = "img/soso.PNG";
                 }else if(s_mise < 72 && mise < 151){
                     total_mise = "나쁨";
-                    total_bg = "img/나쁨.PNG";
+                    total_bg = "img/bad.PNG";
                 }else{
                     total_mise = "매우나쁨";
-                    total_bg = "img/매우나쁨.PNG";
+                    total_bg = "img/verybad.PNG";
                 }
 
                 air.innerHTML = ""; //초기화
-                air.innerHTML += total_mise + "<br>";
+               /*  air.innerHTML += total_mise + "<br>";
                 air.innerHTML += "초미세 : " + s_mise_text + "(" + s_mise + ") <br>";
-                air.innerHTML += "미세 : " + mise_text + "(" + mise + ")";
+                air.innerHTML += "미세 : " + mise_text + "(" + mise + ")"; */
 
                 air.style.background = `url("${total_bg}")`;
                 air.style.backgroundSize = "cover";
